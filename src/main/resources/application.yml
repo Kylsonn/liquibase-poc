@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+  database:
+    driverClassName: org.postgresql.Driver
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/ultracarweb_user?currentSchema=public
+    username: postgres
+    password: postgres
