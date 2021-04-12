@@ -8,4 +8,4 @@ CREATE TABLE tb_user
   password        CHARACTER VARYING(20)  NOT NULL
 );
 
---ROLLBACK DROP TABLE user;
+--ROLLBACK DROP TABLE tb_user;
