@@ -6,6 +6,6 @@ spring:
     driverClassName: org.postgresql.Driver
   datasource:
     platform: postgres
-    url: jdbc:postgresql://localhost:5432/ultracarweb_user?currentSchema=public
+    url: jdbc:postgresql://localhost:5432/ultracarweb_user_test?currentSchema=public
     username: postgres
     password: postgres
