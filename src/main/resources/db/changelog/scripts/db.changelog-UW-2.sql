@@ -1,7 +1,15 @@
 -- liquibase formatted SQL
 
 -- changeset kylsonn.batista:2 dbms:postgresql
-INSERT INTO tb_user(username,password) VALUES ('user1', '123456');
-INSERT INTO tb_user(username,password) VALUES ('user2', 'asdfasd');
-INSERT INTO tb_user(username,password) VALUES ('user3', 'abcd1234');
-INSERT INTO tb_user(username,password) VALUES ('user4', '9874151');
+alter table tb_user
+    add COLUMN created_date timestamp NOT NULL,
+    add COLUMN active boolean NOT NULL,
+    add COLUMN email_checked boolean NOT NULL,
+    add COLUMN last_access timestamp;
+
+
+-- ROLLBACK ALTER TABLE tb_user
+-- ROLLBACK    DROP COLUMN created_date,
+-- ROLLBACK    DROP COLUMN active,
+-- ROLLBACK    DROP COLUMN email_checked,
+-- ROLLBACK    DROP COLUMN last_access;

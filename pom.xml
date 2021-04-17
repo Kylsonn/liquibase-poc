@@ -16,8 +16,20 @@
 	<properties>
 		<java.version>11</java.version>
 		<liquibase.version>3.8.0</liquibase.version>
+		<apache.commons.version>3.12.0</apache.commons.version>
+		<hibernate.validator.version>6.0.10.Final</hibernate.validator.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${apache.commons.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${hibernate.validator.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>

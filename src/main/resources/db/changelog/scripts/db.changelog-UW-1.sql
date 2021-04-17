@@ -4,8 +4,8 @@
 CREATE TABLE tb_user
 (
   id              BIGSERIAL PRIMARY KEY NOT NULL ,
-  username        CHARACTER VARYING(100) NOT NULL,
+  username        CHARACTER VARYING(100) UNIQUE NOT NULL,
   password        CHARACTER VARYING(20)  NOT NULL
 );
 
---ROLLBACK DROP TABLE tb_user;
+--ROLLBACK DROP TABLE user;
